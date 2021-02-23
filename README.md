@@ -28,6 +28,8 @@ date: "2/23/2021"
 ### 4) Area of forest within a distance of 500 m to water bodies (lakes, rivers)
 ### 5) Georeference and Google basemap
 
+# Part 1: Preprocessing
+
 ## Step 1: Download Shapefile 
 ### Source: 
 
@@ -103,5 +105,37 @@ Geoprocessing -> Clip
 
 ### 5) Land cover 
 ![](LandCover.png)<!-- -->
+
+
+# Part 2: Calculate areas
+
+## Step 1: Area of whole study area
+```
+Dissolved layer -> Open Attribute Table -> Add Field -> Floating point value -> Calculate Geometry 
+```
+![](DissolveArea.png)<!-- -->
+
+
+## Step 2: Area of the counties and city of Cottbus
+```
+Counties layer -> Open Attribute Table -> Add Filed -> Floating point value -> Calculate Geometry
+Calculate percentage land cover
+```
+![](CountiesArea.png)<!-- -->
+
+
+## Step 3: Area of Water Protection areas
+```
+ArcGIS = Selection operation
+QGIS = Dissolve operation
+
+Water Protection layer -> Open Attribute Table -> Add Filed -> Floating point value -> Calculate Geometry
+
+Statistics -> Each counties
+```
+![](WaterProtectionArea.png)<!-- -->
+
+
+## Step 4: Number of groundwater measurement station in each counties
 
 
