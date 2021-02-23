@@ -77,4 +77,31 @@ Geoprocessing -> Dissolve
 ```
 ![](Dissolve.png)<!-- -->
 
+## Step 7: Add additional shapefiles
+### 1) Water network
+### 2) Lakes
+### 3) Water protection area
+### 4) Groundwater measurement stations
+### 5) Land cover 
+
+```
+Layer -> Add Data -> files.shp -> crs WGS84
+Geoprocessing -> Clip
+```
+
+### 1) Water network
+![](WaterNetworks.png)<!-- -->
+
+### 2) Lakes
+![](Lakes.png)<!-- -->
+
+### 3) Water protection area
+![](WaterProtection.png)<!-- -->
+
+### 4) Groundwater measurement stations
+![](GroundWater-MeasurementStations.png)<!-- -->
+
+### 5) Land cover 
+![](Landcover.png)<!-- -->
+
 
