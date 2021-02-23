@@ -102,6 +102,6 @@ Geoprocessing -> Clip
 ![](GroundWater-MeasurementStations.png)<!-- -->
 
 ### 5) Land cover 
-![](Landcover.png)<!-- -->
+![](LandCover.png)<!-- -->
 
 
