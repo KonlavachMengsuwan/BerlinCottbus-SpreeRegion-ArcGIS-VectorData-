@@ -196,7 +196,7 @@ Dissolve Type:ALL
 ![](BufferLakes.png)<!-- -->
 
 
-## Step 3: Overlay operation to combine Buffer zones of Water Networks and Lakes
+## Step 3: Union operation to combine Buffer zones of Water Networks and Lakes
 
 ```
 1) Union
@@ -215,5 +215,16 @@ ArcToolBox -> Data Management -> Generalization -> Dissolve
 
 ### Dissolve all Lakes and Water Networks
 ![](DissolveWater.png)<!-- -->
+
+## Step 4: Intersect operation to intersect Forest and Water Boides
+```
+Geoprocessing -> Intersect
+```
+![](Intersect.png)<!-- -->
+
+## Step 5: Calculate Forest area within 500 m from all Water Bodies
+
+![](AreaForest.png)<!-- -->
+
 
 
