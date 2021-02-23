@@ -1,16 +1,10 @@
 # BerlinCottbus-SpreeRegion-ArcGIS-VectorData-
 Vector Data Ecosystem Analysis with ArcGIS on Berlin-Cottbus Spree region.
 
----
 title: "Ecosystem Analysis Vector Data Berlin-Cottbus Spree region"
 author: "Konlavach"
 date: "2/23/2021"
 output: html_document
----
-
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
-```
 
 ## The spatial extend of the case study region is defined by four counties and one city:
 ### 1)	Spree-Neiße
