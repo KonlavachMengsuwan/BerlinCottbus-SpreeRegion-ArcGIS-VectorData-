@@ -53,6 +53,7 @@ Layer -> Add Data -> Select "German county polygons: vg250_kr.shp"
 ```
 Legend -> Properties
 ```
+![](AddShapefile.png)<!-- -->
 
 ## Step 3: Select relevant county polygons
 
@@ -62,5 +63,23 @@ Legend -> Properties
 - Brandenbur counties regional key = 12xxx
 - Select
 ```
+![](SelectCottbus.png)<!-- -->
 
-![](AddShapefile.png)<!-- -->
+## Step 4: Copy selected features
+```
+ArcToolBox -> Data Management -> Features -> Copy Feature
+```
+
+## Step 5: Update visualization
+```
+Properties -> Symbology -> Standard symbols -> Categories -> unique values
+```
+![](Symbology.png)<!-- -->
+
+## Step 6: Dissolve all counties 
+```
+Geoprocessing -> Dissolve
+```
+![](Dissolve.png)<!-- -->
+
+
