@@ -168,3 +168,52 @@ Geoprocessing -> Dissolve
 ```
 ### Forest within study region
 ![](Forest.png)<!-- -->
+
+
+## Step 2: Buffer operation for Water Bodies (Lakes, Water Networks)
+## To find the area around Water Bodies
+
+```
+1) Buffer
+Geoprocessing -> Buffer
+
+OR
+
+ArcToolBox -> Analysis Tools -> Proximity -> Buffer 
+
+2) input
+Linear unit:  500 Meters
+Side Tpye:    FULL
+End Type:     ROUND
+Method:       PLANAR
+Dissolve Type:ALL
+```
+
+### Water Networks - Buffered
+![](BufferWaterNetwork.png)<!-- -->
+
+### Lakes - Buffered
+![](BufferLakes.png)<!-- -->
+
+
+## Step 3: Overlay operation to combine Buffer zones of Water Networks and Lakes
+
+```
+1) Union
+Geoprocessing -> Union 
+
+OR
+
+ArcToolBox -> Analysis Tools -> Overlay -> Union
+
+2) Dissolve
+Geoprocessing -> Dissolve
+ArcToolBox -> Data Management -> Generalization -> Dissolve
+```
+### All Lakes ∪ Water Networks
+![](UnionWater.png)<!-- -->
+
+### Dissolve all Lakes and Water Networks
+![](DissolveWater.png)<!-- -->
+
+
