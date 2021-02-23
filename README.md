@@ -145,4 +145,26 @@ Statistics -> Each counties
 
 ![](GroundWater-MeasurementStations-Table.png)<!-- -->
 
+# Part 3: Forest area nearby water bodies
+## Step 1: Selection and Extraction of "forest"
+```
+1) Land cover layer -> open attribute table -> Selection -> Select by Attribute 
 
+"CODE_06" ='311' OR "CODE_06" = '312' OR "CODE_06" = '313'
+
+OR
+
+"CODE_06" LIKE '31%'"
+
+2) 
+ArcToolBox -> Data Management -> Features -> Copy Feature
+
+OR
+
+ArcToolBox -> Analysis Tools -> Extract -> Select
+
+3) Dissolve
+Geoprocessing -> Dissolve 
+```
+### Forest within study region
+![](Forest.png)<!-- -->
