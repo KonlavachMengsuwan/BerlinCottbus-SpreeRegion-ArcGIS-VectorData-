@@ -134,8 +134,15 @@ Water Protection layer -> Open Attribute Table -> Add Filed -> Floating point va
 Statistics -> Each counties
 ```
 ![](WaterProtectionArea.png)<!-- -->
-
+![](WaterProtectionTable.png)<!-- -->
 
 ## Step 4: Number of groundwater measurement station in each counties
+```
+1) Geoprocessing -> Intersect 
+(OR)
+2) ArcToolBox -> Analysis Tools -> Overlay -> Intersect
+```
+
+![](GroundWater-MeasurementStations-Table.png)<!-- -->
 
 
